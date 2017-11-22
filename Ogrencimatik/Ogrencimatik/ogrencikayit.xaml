@@ -1,0 +1,63 @@
+﻿<Window x:Class="Ogrencimatik.ogrencikayit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:Ogrencimatik"
+        xmlns:s="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Öğrenci Kayıt Paneli" Height="466.917" Width="510.903">
+    <Grid Margin="0,0,0,1" HorizontalAlignment="Left" Width="501">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnogrkytgeri" Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="56" Height="54" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="geri-don.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label" Content="Ad" HorizontalAlignment="Left" Margin="110,93,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Soyad" HorizontalAlignment="Left" Margin="95,117,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="İlçe" HorizontalAlignment="Left" Margin="102,145,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Adres" HorizontalAlignment="Left" Margin="95,171,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Telefon" HorizontalAlignment="Left" Margin="89,210,0,0" VerticalAlignment="Top"/>
+
+
+
+        <Label x:Name="label5" Content="Eğitim Durumu" HorizontalAlignment="Left" Margin="47,241,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label6" Content="Okul" HorizontalAlignment="Left" Margin="95,269,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label7" Content="Dönem" HorizontalAlignment="Left" Margin="81,300,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label8" Content="Veli Ad" HorizontalAlignment="Left" Margin="306,93,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="label9" Content="Veli Soyad" HorizontalAlignment="Left" Margin="289,117,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label10" Content="Veli Telefon" HorizontalAlignment="Left" Margin="283,145,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label11" Content="Veli Mail" HorizontalAlignment="Left" Margin="298,174,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label12" Content="Cinsiyet" HorizontalAlignment="Left" Margin="84,331,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtogrkytad" HorizontalAlignment="Left" Height="23" Margin="149,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtogrkytsoyad" HorizontalAlignment="Left" Height="23" Margin="149,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtogrkytilce" HorizontalAlignment="Left" Height="23" Margin="149,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <TextBox x:Name="txtogrkytegtm" HorizontalAlignment="Left" Height="23" Margin="149,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtogrkytokl" HorizontalAlignment="Left" Height="23" Margin="149,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtogrkytdonem" HorizontalAlignment="Left" Height="23" Margin="149,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtogrkytvad" HorizontalAlignment="Left" Height="23" Margin="358,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtogrkytvsyd" HorizontalAlignment="Left" Height="23" Margin="358,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <xctk:MaskedTextBox x:Name="txtogrkytvtel"
+                             Mask="(000) 000-0000"
+                             ValueDataType="{x:Type s:String}" Height="20" RenderTransformOrigin="0.5,0.561" Margin="358,150,23,265"  />
+        <TextBox x:Name="txtogrkytvmail" HorizontalAlignment="Left" Height="23" Margin="358,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <RadioButton x:Name="rbtnogrkytkdn" Content="Kadın" HorizontalAlignment="Left" Margin="220,337,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbtnogrkyterk" Content="Erkek" HorizontalAlignment="Left" Margin="162,337,0,0" VerticalAlignment="Top" Checked="rbtnogrkyterk_Checked"/>
+        <StackPanel Margin="149,214,232,189">
+            <xctk:MaskedTextBox x:Name="mtxtogrkyttel"
+                             Mask="(000) 000-0000"
+                             ValueDataType="{x:Type s:String}" Height="20" RenderTransformOrigin="0.5,0.561"  />
+
+        </StackPanel>
+        <Button x:Name="btnogrkytekle" Content="Öğrenci Ekle" HorizontalAlignment="Left" Margin="162,374,0,0" VerticalAlignment="Top" Width="94" Height="41" FontFamily="Segoe UI Black" Click="btnogrkytekle_Click"/>
+        <Button x:Name="btnogrkytiptal" Content="İptal" HorizontalAlignment="Left" Margin="274,374,0,0" VerticalAlignment="Top" Width="94" Height="41" FontFamily="Segoe UI Black" Click="btnogrkytiptal_Click"/>
+        <TextBox x:Name="rtxtogrkytadrs" HorizontalAlignment="Left" Height="31" Margin="149,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

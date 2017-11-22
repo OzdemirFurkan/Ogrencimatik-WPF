@@ -1,0 +1,29 @@
+﻿<Window x:Class="Ogrencimatik.ogrlistele"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:Ogrencimatik"
+        mc:Ignorable="d"
+        Title="Ogrencimatik - Öğrenci Listele" Height="578.865" Width="935.515">
+    <Grid Margin="0,0,0,6">
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="24,25,0,0" VerticalAlignment="Top" Width="116" Height="107" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="geri-don.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ogrlsls" Content="LİSTELE" HorizontalAlignment="Left" Margin="586,25,0,0" VerticalAlignment="Top" Width="146" Height="92" FontFamily="Segoe UI Black" FontSize="24" Foreground="#FF3498DB" Background="{x:Null}" BorderBrush="#FF2980B9" Click="ogrlsls_Click"/>
+        <Button x:Name="btnogrlskyt" Content="Kayıt&#xD;&#xA;Penceresi" HorizontalAlignment="Left" Margin="750,25,0,0" VerticalAlignment="Top" Width="150" Height="92" Background="{x:Null}" BorderBrush="#FF2980B9" Foreground="#FF3498DB" FontFamily="Segoe UI Black" FontSize="24"/>
+        <Button x:Name="btnogrlssil" Content="Öğrenci&#xD;&#xA;     Sil&#xD;&#xA;" HorizontalAlignment="Left" Margin="685,172,0,0" VerticalAlignment="Top" Width="142" Height="73" Background="{x:Null}" BorderBrush="#FFC0392B"  Foreground="#FFE74C3C" FontFamily="Segoe UI Black" FontSize="24" Click="btnogrlssil_Click"/>
+        <GroupBox x:Name="groupBox" Header="Öğrenci Arama" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Height="120" Width="467" Foreground="#FF27AE60" FontSize="18">
+            <TextBox x:Name="txtogrlsnara" HorizontalAlignment="Left" Height="54" Margin="10,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
+        </GroupBox>
+        <TextBox x:Name="txtogrlsara" HorizontalAlignment="Left" Height="54" Margin="96,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="362" TextChanged="txtogrlsara_TextChanged" />
+        <Label x:Name="label" Content="No" HorizontalAlignment="Left" Margin="39,166,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#FF27AE60" RenderTransformOrigin="0.412,0.103"/>
+        <Label x:Name="label1" Content="İsim" HorizontalAlignment="Left" Margin="125,166,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#FF27AE60" RenderTransformOrigin="0.69,0.368"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="246" Margin="10,286,0,0" VerticalAlignment="Top" Width="908" SelectionChanged="dataGrid_SelectionChanged"/>
+
+
+    </Grid>
+</Window>
